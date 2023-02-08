@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+	@apply bg-base-200;
+}
+.btn {
+	@apply transform transition duration-300 ease-in-out hover:scale-105;
+}
+
+/* root page */
+.dashbar {
+	@apply flex flex-col;
+}
+.dashbar-actions {
+	@apply flex flex-row justify-between;
+}
+/*root page end*/
+
+/* todoSection */
+.check-and-title {
+	/* label that contains input and p tag */
+	@apply flex flex-row items-center;
+	/* gap between */
+	@apply gap-2;
+}
+.no-task-msg {
+	@apply text-center text-xl text-base-300;
+}
